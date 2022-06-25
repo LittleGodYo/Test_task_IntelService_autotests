@@ -1,0 +1,4 @@
+[WDM] - ====== WebDriver manager ======
+[WDM] - Could not get version for google-chrome. Is google-chrome installed?
+[WDM] - Get LATEST chromedriver version for None google-chrome
+[WDM] - Driver [C:\Users\111\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe] found in cache

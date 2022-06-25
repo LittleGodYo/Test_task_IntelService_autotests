@@ -25,10 +25,12 @@ class BasePage:
         return locating[find_by]
 
     def is_visible(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
-        return self.__wait.until(ec.visibility_of_element_located((self.__get_selenium_by(find_by), locator)), locator_name)
+        return self.__wait.until(ec.visibility_of_element_located((self.__get_selenium_by(find_by), locator)),
+                                 locator_name)
 
     def is_present(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
-        return self.__wait.until(ec.presence_of_element_located((self.__get_selenium_by(find_by), locator)), locator_name)
+        return self.__wait.until(ec.presence_of_element_located((self.__get_selenium_by(find_by), locator)),
+                                 locator_name)
 
     def is_not_present(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
         return self.__wait.until(ec.invisibility_of_element_located((self.__get_selenium_by(find_by), locator)),
@@ -51,3 +53,8 @@ class BasePage:
     def get_element_by_text(self, elements: List[WebElement], name: str) -> WebElement:
         name = name.lower()
         return [element for element in elements if element.text.lower() == name][0]
+
+    def text_alert(self):
+        alert = self.driver.switch_to.alert
+        text = alert.text
+        return text
