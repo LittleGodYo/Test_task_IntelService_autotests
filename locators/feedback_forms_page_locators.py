@@ -1,0 +1,2 @@
+class FeedbackFormPageLocators:
+    pass
