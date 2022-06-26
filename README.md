@@ -1,5 +1,5 @@
 # Автотесты для формы обратной связи, реализовано в качестве тз для компании ИнтелСервис
-![chrome_P9c8UMMIb8](https://user-images.githubusercontent.com/106131067/175815096-e34578e4-e892-4a7c-afd8-2afc2a7b67f1.png){ width: 200px; }
+![chrome_P9c8UMMIb8](https://user-images.githubusercontent.com/106131067/175815096-e34578e4-e892-4a7c-afd8-2afc2a7b67f1.png)
 
 ## Список проверок, реализованных в автотестах
 - [x] Отправка полностью заполненной формы
